@@ -82,7 +82,7 @@ fn main() {
     println!("Before: x is = {}",x);
     x = increase_by_one(x);
     println!("After: x is = {}",x);
-    // x, z = divmod(x, z);
+    (x, z) = divmod(x, z);
     println!("After Divmoding x = {}, z = {}", x, z);
     let (w,z) = (3, "hello,chen");
     println!("hello,Mr.chen.");
@@ -147,11 +147,6 @@ fn main() {
     // println!("{}", x);  Error
 
     // 8、struct 
-    let c_1 = Circle {
-        center: (-1,1),
-        radius: 1,
-    };
-
     let c_1 = Circle {
         center: (-1,1),
         radius: 1,

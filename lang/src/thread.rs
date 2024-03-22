@@ -8,7 +8,8 @@ use std::sync::mpsc;
 use std::sync::Arc;
 use std::sync::atomic::{AtomicUsize,Ordering};
 
-#[derive(Debug)]struct People {
+#[derive(Debug)]
+struct People {
     name: String,
 }       
 
@@ -28,7 +29,8 @@ trait HasArea {
 }
 
 // trait里面的函数可以没有函数体，实现代码交给具体实现它的类型去补充：
-#[derive(Debug)]struct Circle {
+#[derive(Debug)]
+struct Circle {
     x: f64,
     y: f64,
     radius:f64,
@@ -167,15 +169,15 @@ fn main() {
 
     new_thread.join().unwrap();
     println!("shared value in main thread: {}",var.load(Ordering::SeqCst));
-    let mut sum = 1;
+
+    // stop watch
+    let mut sum: i64 = 1;
     let sw = Stopwatch::start_new();
     let sy_time = SystemTime::now();
     for i in 1..10000 * 10 {
-        // println!("i is {}",i);
         sum = sum + i;
     }
     println!("The sum is {},time is : {:?}",sum, sw.elapsed_ms());
-    println!("Hello, world!");  sy_time.elapsed().unwrap().as_secs();
-    println!("hello,world !");
-
+    println!("Hello, world!, {:?}", sy_time.elapsed().unwrap().as_secs());  
+    
 }
