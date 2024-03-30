@@ -18,4 +18,5 @@ It accomplishes these goals by being memory safe without using garbage collectio
 
 - [The Rust Reference](https://rustwiki.org/en/reference/introduction.html)
 - [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
+- [Rust by Example ZH](https://rustwiki.org/zh-CN/rust-by-example/index.html)
 - [project documents](./doc/)
