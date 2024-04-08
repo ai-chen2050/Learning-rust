@@ -16,7 +16,8 @@ It accomplishes these goals by being memory safe without using garbage collectio
 
 ## Reference online reading docs
 
-- [The Rust Reference](https://rustwiki.org/en/reference/introduction.html)
-- [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
-- [Rust by Example ZH](https://rustwiki.org/zh-CN/rust-by-example/index.html)
-- [project documents](./doc/)
+- Onboard: [Rust cookbook zh](https://llever.com/rust-cookbook-zh/intro.zh.html)
+- Official: [The Rust Reference](https://rustwiki.org/en/reference/introduction.html)
+- Example: [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
+- Example zh: [Rust by Example ZH](https://rustwiki.org/zh-CN/rust-by-example/index.html)
+- Project Ln: [project documents](./doc/)
