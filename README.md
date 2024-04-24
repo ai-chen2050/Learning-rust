@@ -8,10 +8,12 @@ It accomplishes these goals by being memory safe without using garbage collectio
 ## Table of content
 
 - base
-  - [base](./lang/src/base.rs)
+  - [lang](./lang/src/base.rs)
   - [thread](./lang/src/thread.rs)
 - pro
   - [attri-macro](./pro/attri-hello-call/)
+- [projs](./projs/)
+  - [grpc-demo](./projs/grpc-demo/)
 
 
 ## Reference online reading docs
