@@ -7,17 +7,18 @@ description = "A demo to learn tonic and grpc."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name="server"
+name="grpc-server"
 path="src/bin/server.rs"
 
 [[bin]]
-name="client"
+name="grpc-client"
 path="src/bin/client.rs"
 
 [dependencies]
-prost = "0.11.3"
-tokio = { version = "1.19.2", features = ["macros", "rt-multi-thread"] }
-tonic = "0.8.3"
+tonic = "0.11.0"
+prost = "0.12.4"
+tokio = { version = "1", features = ["full"] }
+
 
 [build-dependencies]
-tonic-build = "0.8.4"
+tonic-build = "0.11.0"

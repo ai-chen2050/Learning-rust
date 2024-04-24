@@ -16,7 +16,9 @@ members = [
     "pro/future-demo",
     "projs/minigrep",
     "projs/actix-web-demo",
-    "projs/orm-rbatis-demo",
+    "projs/see-orm-demo/basic",
+    # can't be multi-workspace in one project
+    # "projs/see-orm-demo/tonic_example", actix_example, graphql_example
     "projs/wasm-hello/hello-wasm",
     "projs/url-mapper-rs",
     "projs/tokio-demo",

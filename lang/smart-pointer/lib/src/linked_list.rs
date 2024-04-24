@@ -35,23 +35,23 @@ impl<T> MyLinkedList<T> {
         }
     }
 
-    pub fn insert(&mut self, x: T, index: usize) -> Result<bool, dyn Error> { Ok(true) }
+    pub fn insert(&mut self, x: T, index: usize) -> bool { true }
 
-    pub fn delete(&mut self, index: usize) -> Result<bool, dyn Error> {
-        Ok(true)
+    pub fn delete(&mut self, index: usize) -> bool {
+        true
     }
 
-    pub fn replace(&mut self, index: usize) -> Result<bool, dyn Error> { Ok(true) }
+    pub fn replace(&mut self, index: usize) -> bool { true }
 
-    pub fn get_elem(&self, index: usize) -> Result<Option<Node<T>>, dyn Error> { Ok(None) }
+    pub fn get_elem(&self, index: usize) -> Option<Node<T>> { None }
 
-    pub fn prepend(&mut self, data: T) -> Result<bool, dyn Error> { Ok(true) }
+    pub fn prepend(&mut self, data: T) -> bool { true }
 
-    pub fn clear(&mut self) -> Result<bool, dyn Error> { Ok(true) }
+    pub fn clear(&mut self) -> bool { true }
 
-    pub fn traverse(&self) -> Result<bool, dyn Error> { Ok(true) }
+    pub fn traverse(&self) -> bool { true }
 
-    pub fn stringify(&self) -> Result<String, dyn Error> { Ok(String::from("")) }
+    pub fn stringify(&self) -> String { String::from("") }
 
     pub fn head(&self) -> &Option<Node<T>> {
         &self.head
@@ -80,10 +80,10 @@ mod tests {
         let node1 = Node::with(String::from("hello"));
         let list1 = MyLinkedList::with(node1);
         println!("init list1: {:?}", list1);
-        assert_eq!(list1.len(), 1);
+        assert_eq!(*list1.len(), 1);
 
         let mut list2: MyLinkedList<String> = MyLinkedList::new();
         println!("init list2: {:?}", list2);
-        assert_eq!(list2.len(), 0);
+        assert_eq!(*list2.len(), 0);
     }
 }
