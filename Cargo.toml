@@ -1,5 +1,25 @@
 [workspace]
 members = [
+    "lang/base",
+    "lang/generic-trait-lifetime",
+    "lang/ownership",
+    "lang/smart-pointer",
+    "lang/functional",
+    "lang/concurrency",
+    "lang/ffi-demo",
+    "lang/oop",
+    "lang/default-and-with",
+    "lang/compare",
     "pro/attri-hello-call",
-    "lang"
+    "pro/unsafe-lifetime",
+    "pro/reflection",
+    "pro/future-demo",
+    "projs/minigrep",
+    "projs/actix-web-demo",
+    "projs/orm-rbatis-demo",
+    "projs/wasm-hello/hello-wasm",
+    "projs/url-mapper-rs",
+    "projs/tokio-demo",
+    "projs/grpc-demo/tonic-demo",
+    "projs/libp2p-demo",
 ]
