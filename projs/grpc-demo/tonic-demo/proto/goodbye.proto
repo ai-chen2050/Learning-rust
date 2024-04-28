@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "basic/basic.proto";
-
 package goodbye;
+
+import "basic/basic.proto";
 
 service Goodbye {
   rpc Goodbye(GoodbyeRequest) returns (GoodbyeResponse) {}

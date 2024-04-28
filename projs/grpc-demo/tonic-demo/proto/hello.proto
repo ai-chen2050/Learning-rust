@@ -1,8 +1,9 @@
 syntax = "proto3";
 
+package hello;
+
 import "basic/basic.proto";
 
-package hello;
 
 service Hello {
   rpc Hello(HelloRequest) returns (HelloResponse) {}
