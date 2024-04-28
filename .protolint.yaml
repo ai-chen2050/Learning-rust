@@ -1,0 +1,14 @@
+lint:
+  rules:
+    no_default: false
+
+    # More detail ref: https://github.com/yoheimuta/protolint
+    # The specific linters to remove.
+    remove:
+      - INDENT
+      - ENUM_FIELD_NAMES_PREFIX
+      - ENUM_FIELD_NAMES_ZERO_VALUE_END_WITH
+
+    add:
+      # - MESSAGE_NAMES_UPPER_CAMEL_CASE
+      # - SERVICE_NAMES_UPPER_CAMEL_CASE
