@@ -19,6 +19,9 @@ members = [
     "projs/see-orm-demo/basic",
     # can't be multi-workspace in one project
     # "projs/see-orm-demo/tonic_example", actix_example, graphql_example
+    "projs/see-orm-demo/tutorial/bakery-backend",
+    "projs/see-orm-demo/tutorial/graphql-example",
+    "projs/see-orm-demo/tutorial/rocket-example",
     "projs/wasm-hello/hello-wasm",
     "projs/url-mapper-rs",
     "projs/tokio-demo",
