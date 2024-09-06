@@ -1,0 +1,32 @@
+[package]
+name = "pprof"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+criterion = {version = "0.5" }
+backtrace = { version = "0.3" }
+protobuf = { version = "2.0", optional = true }
+prost = { version = "0.12", optional = true  }
+prost-derive = { version = "0.12", optional = true }
+pprof = { version = "0.13.0", features = ["cpp", "criterion", "flamegraph", "protobuf", "protobuf-codec"] } # "prost-codec", "protobuf-codec" can't together
+
+# [[example]]
+# name = "flamegraph"
+# required-features = ["flamegraph"]
+
+# [[example]]
+# name = "profile_proto_with_prost"
+# required-features = ["protobuf", "prost-codec"]
+
+# [[example]]
+# name = "profile_proto_with_protobuf_codec"
+# required-features = ["protobuf", "protobuf-codec"]
+
+# [[example]]
+# name = "multithread_flamegraph"
+# required-features = ["flamegraph"]
+
+# [[example]]
+# name = "criterion"
+# required-features = ["flamegraph", "criterion"]

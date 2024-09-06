@@ -10,6 +10,7 @@ members = [
     "lang/oop",
     "lang/default-and-with",
     "lang/compare",
+    "pro/pprof",
     "pro/attri-hello-call",
     "pro/unsafe-lifetime",
     "pro/reflection",
