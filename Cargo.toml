@@ -27,5 +27,6 @@ members = [
     "projs/url-mapper-rs",
     "projs/tokio-demo",
     "projs/grpc-demo/tonic-demo",
+    "projs/gossipnet",
     "projs/libp2p-demo",
 ]

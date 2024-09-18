@@ -100,12 +100,14 @@ fn main() {
     println!("Prime numbers: {}", v);
 
     if let Ok(report) = guard.report().build() {
-        let mut file = File::create("profile.pb").unwrap();
-        let profile = report.pprof().unwrap();
+        let mut file = File::create("profile.pb").expect("Failed to create profile file");
+        let profile = report.pprof().expect("Failed to build profile");
 
         let mut content = Vec::new();
-        profile.write_to_vec(&mut content).unwrap();
-        file.write_all(&content).unwrap();
+        profile
+            .write_to_vec(&mut content)
+            .expect("Failed to write profile");
+        file.write_all(&content).expect("Failed to write to file");
 
         println!("report: {:?}", report);
     };
