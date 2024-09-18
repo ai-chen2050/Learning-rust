@@ -11,6 +11,7 @@ members = [
     "lang/default-and-with",
     "lang/compare",
     "pro/pprof",
+    "pro/jemalloc",
     "pro/attri-hello-call",
     "pro/unsafe-lifetime",
     "pro/reflection",
@@ -27,5 +28,8 @@ members = [
     "projs/url-mapper-rs",
     "projs/tokio-demo",
     "projs/grpc-demo/tonic-demo",
-    "projs/libp2p-demo",
+    "projs/gossipnet",
+    "projs/libp2p-demo", 
 ]
+
+workspace.resolver = "2"

@@ -1,0 +1,17 @@
+[package]
+name = "jemalloc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.7"
+tokio = { version = "1.40.0", features = ["macros", "rt", "rt-multi-thread"] }
+jemalloc_pprof = "0.6.0"
+[target.'cfg(not(target_env = "msvc"))'.dependencies]
+tikv-jemallocator = { version = "0.6.0", features = [
+    "profiling",
+    "unprefixed_malloc_on_supported_platforms",
+] }
+
+[profile.release]
+debug = true
