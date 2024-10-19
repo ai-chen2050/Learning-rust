@@ -4,7 +4,14 @@
 
 please see examples, for cpu profiling.
 
-## use the Heaptrack
+- [crates/pprof](https://crates.io/crates/pprof)
+
+```bash
+~/go/bin/pprof -svg profile.pb  > profile.svg
+go tool pprof -call_tree -lines -output profile.png -png <exec_path>  profile.pb
+```
+
+## use the linux Heaptrack
 
 ```bash
 sudo apt-get install heaptrack
