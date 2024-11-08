@@ -16,6 +16,7 @@ members = [
     "pro/unsafe-lifetime",
     "pro/reflection",
     "pro/future-demo",
+    "pro/alloy", 
     "projs/minigrep",
     "projs/actix-web-demo",
     "projs/see-orm-demo/basic",
@@ -29,7 +30,7 @@ members = [
     "projs/tokio-demo",
     "projs/grpc-demo/tonic-demo",
     "projs/gossipnet",
-    "projs/libp2p-demo", 
+    "projs/libp2p-demo",
 ]
 
 workspace.resolver = "2"
